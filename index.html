@@ -43,8 +43,29 @@
           <p id="card-type">a</p>
         </div>
       </div>
-      <div class="container__right">
-        <div class="card_box_container"></div>
+      <div class="container__right" id="computer-cards">
+        <div class="card_box framed"></div>
+
+        <div class="card-versus">
+          <div class="versus-top">
+            <div class="card-infield">
+              <img height="180px" width="125px" id="player-field-card" />
+              <img
+                height="100px"
+                src="./src/assets/icons/millenium2.png"
+                alt=""
+              />
+              <img height="180px" width="125px" id="computer-field-card" />
+            </div>
+          </div>
+          <div class="versus-bottom">
+            <button id="next-duel" class="rpgui-button" onclick="reserDuel()">
+              YOU WIN
+            </button>
+          </div>
+        </div>
+
+        <div class="card_box framed" id="player-cards"></div>
       </div>
     </div>
     <script src="./src/scripts/engine.js" defer></script>
